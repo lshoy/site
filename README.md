@@ -1,4 +1,6 @@
-# Larry Shoyfer Writings — Minimalist reading room
+# Larry Shoyfer Writings Website
+
+(prev webdev; all done by codex)
 
 This repository powers **larryshoyfer.com**, a static Next.js site that turns Markdown files into a searchable notebook. The landing page and `/writings` route revolve around a “blog browser” panel: a left rail lists nested groups derived from slash-delimited tags, while the right rail streams matching entries with inline search. Entry pages keep the same serif/monospace palette, surface metadata via tapes of labels, and link to nearby notes based on shared tags or series.
 
