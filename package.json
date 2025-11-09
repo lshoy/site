@@ -1,0 +1,44 @@
+{
+  "name": "next-static-markdown-blog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "preview": "serve -s -l 3000 out",
+    "start": "next start -p 3000",
+    "clean": "rimraf .next out",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "gray-matter": "latest",
+    "rehype-stringify": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "remark-gfm": "latest",
+    "remark-parse": "latest",
+    "remark-rehype": "latest",
+    "serve": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "@eslint/js": "latest",
+    "typescript-eslint": "latest",
+    "prettier": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "rimraf": "latest",
+    "typescript": "latest",
+    "unified": "latest"
+  }
+}
