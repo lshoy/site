@@ -1,0 +1,27 @@
+---
+title: I Lied
+date: 2025-09-24
+summary: I mention Beethoven then ramble (speak about interesting things in a stream of thought). Please don't read that with classical gay-writer tense!
+tags:
+  - Philosophy
+  - Experimental
+  - Speculative
+  - Disillusionment
+  - Music
+cosmetic-tags :
+  - Experimental just means "bullshit"
+  - Experimental doesn't just mean "bullshit"
+  - Oh look! He presented a diametrically opposed contradiction!
+  - The point in a way has something to do with speculation in and of itself, ought it not?!
+  - So it's not actually speculative?
+  - I spell it 'in of itself'! Thank you very much!
+series: General
+slug: i-lied
+---
+I lied. Beethoven isn't that great. He's great, but not dogmatically great. People just started listening to music for no particular reason, or at the very least, in a sort of social parade as though now where we listen to music for the so called fun of it. For them they had their funs from it. Perhaps the funs from it were related to reason. Ought I to google this? God help us all.
+
+Or is it that they're just sounds. Sounds sounds sounds sounds sounds crashing in the waves. Is it that you show something new to someone and it is orgasmic? That cannot be the answer by virtue of formal analysis. What was it then with Beethoven? Is it bound to evoke some sort of inner so called "built-in" volitions. Even then, it seems as though I may abstract it in all manner of sound. The emotion is not there. Ought I to let it in, and then it comes? I suppose this is a form of what one may call bottling up. I just gave it the name abstraction in this case. But in others, we would call it bottling up. Huh. Or, pure deadness inside. Or, pure emptiness, hmmmmmmmm that is more a state perhaps in which one is in a greater totality of it. Or is that psychosis. No, psychosis must be different by virtue of a greater sense of disillusionment. It is not necessarily about being in abstraction in of itself, although that may play a crucial part. It is more about one's reaction, or perhaps so called relative displacement from their original totality, related to some abstraction(s). A displacement implies some kind of ditch or movement. Perhaps this is not necessarily, but at least for now it makes total explanatory sense until something else comes to mind. For, it can take some time, as it does physically, to move from a place to another, or out of a ditch, so to speed, hence the-the turn of the phrase, so creative we are indeed. In some sense that is true. It appears that I tend to express expressions that can be taken in multiple ways accidentally. Well, I do think that is possible insofar as everything goes, but perhaps I somehow have aligned myself this way. Past tense as perhaps it is now dispositional in a non-conscious manner, as a result of conscious endeavours that may or may not continue or be a cause of such expressions regardless. But in this case I guess, "so creative we are indeed" is that really mocking or not. Partly, partly not. I mean, what did I even mean it when I said it anyway? I think i meant genuinely mock but I cannot quite really give it more than a 60% score, or perhaps some sort of arbitary layer on top of a cake of possibility. It's the top card, so that means something. But are they really ranked.... or is that just a pointer.... ah... now I'm actually speaking nonsense. Regardless, is it that I am admiring the creative quality of turns of the expression in of itself, or is it that I am mocking their derivation from physical things. Or, is it that I am admiring the derivation from physical things. Or is it that I am neutral. I guess I have no stance, I sort of just wanted to say that. That is what I concluded in my head, so to speak, back then, and here I have now done it analytically. Did I unzip the zip? Strange. "I am a strange loop", well Mr Hofdstrader..... or whatever your name is.... I am a gay faggot! Take that philosophy! Or, whatever you are! For sometimes you are a con man. But is it not that all philosophers are con men? LOL. Good one me. I don't know. It's this strange obsession with explanations involving wonder and amazement. Not altogether too indifferent from a man's obession with kawaii, but I suppose some indifference is there! Just a certain alignment, a certain archetype, a la Jung, a great dogmatist, or is it that he is a great descriptivist (as in, describer, as in, person who describes things, as I do not know if that is a real term in philosophy, as the academic people have decided to create one big brain with the same pointers to concepts, which is okay, I guess, maybe, still gotta think on that (hold this that-ism; for so many ideas shall be, have been, thrown upon)), or is it that there is no difference between the two. Perhaps I'm getting a little jumpy or ahead of myself with such a big proclamation I have not really so called thought through. But, interesting! I know there is at the very least some damning kernels of truth in that statement. So damning, oh oh, how man so infinite in his being! Oh! Kiss my piss! Kiss my Piss! I am enlightenment! The pissenment. The pissening of l0rdvad0rl, or whatever the fuck his name was. Del Rey ray reh missfits. There u go historians. The other one was silicon valley (richard hendricks).
+
+God help us. 
+
+Baka~!
