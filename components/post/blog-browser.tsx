@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { GroupNode, PostSummary } from "../../lib/content";
 import { PostMeta } from "./post-meta";
 
@@ -27,6 +27,7 @@ export function BlogBrowser({
 }: BlogBrowserProps) {
   const [activeGroup, setActiveGroup] = useState(defaultSelection ?? "all");
   const [query, setQuery] = useState("");
+  const searchRef = useRef<HTMLInputElement | null>(null);
 
   const { flattened, lookup } = useMemo(() => flattenGroups(groups), [groups]);
   const groupIndex = useMemo(() => buildGroupIndex(groups), [groups]);
@@ -64,10 +65,18 @@ export function BlogBrowser({
       ? "All groups"
       : lookup.get(activeGroup)?.label ?? "All groups";
 
+  useEffect(() => {
+    if (!autoFocusSearch) return;
+    if (typeof window === "undefined") return;
+    const prefersFinePointer = window.matchMedia("(pointer: fine)").matches;
+    if (!prefersFinePointer) return;
+    searchRef.current?.focus();
+  }, [autoFocusSearch]);
+
   return (
     <section className="browser-shell" aria-label="Writings browser">
       <div className="browser-grid">
-        <div className="browser-panel">
+        <div className="browser-panel browser-panel-groups">
           <header className="browser-panel-header">
             <p className="browser-panel-title">Groups</p>
             <p className="browser-panel-count">
@@ -104,7 +113,7 @@ export function BlogBrowser({
           </div>
         </div>
 
-        <div className="browser-panel">
+        <div className="browser-panel browser-panel-results">
           <header className="browser-panel-header">
             <p className="browser-panel-title">{activeLabel}</p>
             <label className="inline-search">
@@ -114,7 +123,8 @@ export function BlogBrowser({
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Title, summary, groups, body"
-                autoFocus={autoFocusSearch}
+                ref={searchRef}
+                aria-label="Search posts"
               />
             </label>
           </header>

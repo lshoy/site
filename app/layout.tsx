@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { siteConfig } from "../lib/site-config";
 import { ThemeProvider } from "../components/theme/theme-provider";
 import { ThemeScript } from "../components/theme/theme-script";
@@ -38,3 +38,9 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};

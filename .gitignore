@@ -9,3 +9,4 @@ out/
 .npm-cache/
 .pnpm-store/
 eslintcache
+tmp/mobile-shots/

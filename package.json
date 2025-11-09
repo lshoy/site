@@ -13,32 +13,36 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "capture:screens": "tsx scripts/capture-mobile-shots.ts",
+    "check:overflow": "tsx scripts/check-overflow.ts"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
     "gray-matter": "latest",
-    "rehype-stringify": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "rehype-stringify": "latest",
     "remark-gfm": "latest",
     "remark-parse": "latest",
     "remark-rehype": "latest",
     "serve": "latest"
   },
   "devDependencies": {
-    "eslint": "latest",
     "@eslint/js": "latest",
-    "typescript-eslint": "latest",
-    "prettier": "latest",
+    "@playwright/test": "^1.56.1",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
     "rimraf": "latest",
+    "tsx": "^4.20.6",
     "typescript": "latest",
+    "typescript-eslint": "latest",
     "unified": "latest"
   }
 }

@@ -35,6 +35,7 @@
             pkgs.openssl
             pkgs.zlib
             pkgs.watchexec
+            pkgs.chromium
           ];
 
           # Keep caches inside the project to avoid touching global dirs
@@ -42,6 +43,7 @@
             export NPM_CONFIG_CACHE="$PWD/.npm-cache"
             export PNPM_STORE_DIR="$PWD/.pnpm-store"
             export PATH="$PWD/node_modules/.bin:$PATH"
+            export CHROMIUM_BIN="${pkgs.chromium}/bin/chromium"
             echo "Dev shell ready: node $(node -v), pnpm $(pnpm -v)"
             echo "Local caches: $NPM_CONFIG_CACHE | $PNPM_STORE_DIR"
           '';
