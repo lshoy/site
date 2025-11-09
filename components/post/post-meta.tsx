@@ -2,15 +2,21 @@ import { PostSummary } from "../../lib/content";
 import { formatDisplayDate } from "../../lib/date-format";
 import { GroupLabel } from "./group-label";
 
-type PostMetaProps = Pick<PostSummary, "date" | "tags" | "series"> & {
+type PostMetaProps = Pick<
+  PostSummary,
+  "date" | "tags" | "series" | "cosmeticTags"
+> & {
   showTags?: boolean;
+  showCosmeticTags?: boolean;
 };
 
 export function PostMeta({
   date,
   tags,
+  cosmeticTags,
   series,
   showTags = true,
+  showCosmeticTags = false,
 }: PostMetaProps) {
   const rows: MetaRow[] = [
     { label: "Date", value: formatDisplayDate(date, "Unscheduled") },
@@ -32,6 +38,11 @@ export function PostMeta({
       {showTags && tags.length ? (
         <div className="post-meta-tags">
           <GroupLabel groups={tags} />
+        </div>
+      ) : null}
+      {showCosmeticTags && cosmeticTags.length ? (
+        <div className="post-meta-tags secondary">
+          <GroupLabel groups={cosmeticTags} />
         </div>
       ) : null}
     </div>

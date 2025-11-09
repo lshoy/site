@@ -6,6 +6,7 @@ tags:
   - Philosophy
   - CP
   - Experimental
+cosmetic-tags :
   - Experimental just means "bullshit"
   - Experimental doesn't just mean "bullshit"
   - Oh look! He presented a diametrically opposed contradiction!

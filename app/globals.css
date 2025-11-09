@@ -586,6 +586,10 @@ pre {
   gap: 0.35rem;
 }
 
+.post-meta-tags.secondary {
+  opacity: 0.85;
+}
+
 .group-label-shell {
   position: relative;
   display: flex;

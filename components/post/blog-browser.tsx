@@ -191,11 +191,13 @@ function computeMatchScore(post: PostSummary, query: string) {
   const title = post.title.toLowerCase();
   const summary = (post.summary ?? "").toLowerCase();
   const tags = post.tags.join(" ").toLowerCase();
+  const cosmetic = post.cosmeticTags.join(" ").toLowerCase();
   const body = post.bodyText.toLowerCase();
   let score = 0;
   if (title.includes(query)) score += 6;
   if (summary.includes(query)) score += 4;
   if (tags.includes(query)) score += 3;
+  if (cosmetic.includes(query)) score += 0.5;
   if (body.includes(query)) score += 1;
   return score;
 }

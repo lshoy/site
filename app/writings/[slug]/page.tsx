@@ -39,7 +39,7 @@ export default async function PostPage({
       <header>
         <p className="site-tagline">{post.series ?? "Standalone note"}</p>
         <h1>{post.title}</h1>
-        <PostMeta {...post} />
+        <PostMeta {...post} showCosmeticTags />
         {post.summary ? <p className="summary">{post.summary}</p> : null}
       </header>
       <div

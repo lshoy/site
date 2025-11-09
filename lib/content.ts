@@ -21,6 +21,8 @@ type PostFrontmatter = {
   summary?: string;
   date?: string;
   tags?: string[] | string;
+  cosmeticTags?: string[] | string;
+  "cosmetic-tags"?: string[] | string;
   series?: string;
   slug?: string;
   heroImage?: string;
@@ -32,6 +34,7 @@ export type PostSummary = {
   summary?: string;
   date?: string;
   tags: string[];
+  cosmeticTags: string[];
   series?: string;
   readingTime: string;
   excerpt: string;
@@ -181,6 +184,7 @@ function buildPostFromFile(filePath: string): Post | undefined {
     summary,
     date: frontmatter.date,
     tags: frontmatter.tags,
+    cosmeticTags: frontmatter.cosmeticTags,
     series: frontmatter.series,
     readingTime,
     excerpt: buildExcerpt(summary, content),
@@ -196,6 +200,7 @@ type NormalizedFrontmatter = {
   summary?: string;
   date?: string;
   tags: string[];
+  cosmeticTags: string[];
   series?: string;
   slug?: string;
   heroImage?: string;
@@ -206,27 +211,25 @@ function normalizeFrontmatter(data: PostFrontmatter): NormalizedFrontmatter {
   const summary = data.summary ? String(data.summary).trim() : undefined;
   const date = data.date ? sanitizeDate(String(data.date)) : undefined;
 
-  const tagsInput = Array.isArray(data.tags)
-    ? data.tags
-    : typeof data.tags === "string"
-      ? data.tags.split(",")
-      : [];
-  const tags: string[] = [];
-  const seenTags = new Set<string>();
-  for (const tag of tagsInput) {
-    const label = String(tag).trim();
-    if (!label) continue;
-    const key = label.toLowerCase();
-    if (seenTags.has(key)) continue;
-    seenTags.add(key);
-    tags.push(label);
-  }
+  const tags = normalizeTagField(data.tags);
+  const cosmeticTags = normalizeTagField(
+    data.cosmeticTags ?? data["cosmetic-tags"],
+  );
 
   const series = data.series ? String(data.series).trim() : undefined;
   const heroImage = data.heroImage ? String(data.heroImage).trim() : undefined;
 
   const slug = data.slug ? slugify(String(data.slug)) : undefined;
-  return { title, summary, date, tags, series, slug, heroImage };
+  return {
+    title,
+    summary,
+    date,
+    tags,
+    cosmeticTags,
+    series,
+    slug,
+    heroImage,
+  };
 }
 
 function sanitizeDate(value: string | undefined): string | undefined {
@@ -339,6 +342,25 @@ function relatedScore(a: PostSummary, b: PostSummary): number {
 function toSummary(post: Post): PostSummary {
   const { html: _html, headings: _headings, ...summary } = post;
   return summary;
+}
+
+function normalizeTagField(input: string[] | string | undefined): string[] {
+  const raw = Array.isArray(input)
+    ? input
+    : typeof input === "string"
+      ? input.split(",")
+      : [];
+  const tags: string[] = [];
+  const seen = new Set<string>();
+  for (const entry of raw) {
+    const label = String(entry).trim();
+    if (!label) continue;
+    const key = label.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    tags.push(label);
+  }
+  return tags;
 }
 
 function slugify(input: string): string {

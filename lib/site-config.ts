@@ -35,6 +35,18 @@ export const siteConfig = {
         width: 160,
         height: 160,
       },
+      {
+        src: "/me.jpeg",
+        alt: "Me with a knife, painting a strange picture that I really am self-aware of enough to not; yet it must be done.",
+        width: 160,
+        height: 160,
+      },
+      {
+        src: "/me2.jpeg",
+        alt: "Me 2.",
+        width: 160,
+        height: 160,
+      },
     ],
   },
   footer: {
